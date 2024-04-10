@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/f035a00893.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Paint App</title>
+  </head>
+  <body>
+    <!--Define Paint Container-->
+    <div class="painter">
+      <!--Define Tools Bar-->
+      <div class="toolsBar">
+        <div class="tools">
+          <div class="eraser">
+            <i class="fa-solid fa-eraser"></i>
+            <label>Eraser</label>
+          </div>
+
+          <div class="brush active">
+            <i class="fa-solid fa-paintbrush"></i>
+            <label id="brush">Brush</label>
+          </div>
+
+          <div class="color">
+            <i class="fa-solid fa-palette"></i>
+            <label for="colorPicker">Choose a Color</label>
+            <input type="color" id="colorPicker" />
+          </div>
+
+          <div class="brushSize">
+            <input type="range" min="1" max="10" id="brush-width" />
+          </div>
+        </div>
+        <!--Define Buttons-->
+        <div class="buttons">
+          <button class="save">Save</button>
+          <button class="clear">Clear</button>
+        </div>
+      </div>
+      <!--Define Canvas-->
+      <div class="canvas">
+        <canvas id="paintCanvas"></canvas>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
